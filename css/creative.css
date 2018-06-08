@@ -337,7 +337,6 @@ header.masthead p {
 }
 
 .fakeMenu {
-  width: 450px;
   box-sizing: border-box;
   height: 25px;
   background-color: #bbb;
@@ -349,7 +348,6 @@ header.masthead p {
 .fakeScreen {
   background-color: #151515;
   box-sizing: border-box;
-  width: 450px;
   margin: 0 auto;
   padding: 20px;
   margin-bottom: 20px;
@@ -532,10 +530,10 @@ span {
 }
 
 .my-image {
-  width: 350px;
+  width:100%;
+  height:100%;
   position: relative;
   border: 2px;
-  margin: 25px;
   opacity: 1;
   transition: opacity 1s;
 }
@@ -553,17 +551,18 @@ span {
 }
 
 .hidden-text {  
-  float: left;
+  position: absolute;
   top: 30px;
   right: 20px;
   opacity: 0;
   color: white;
   transition: opacity 1s;
-  visibility: hidden;
+  font-size: 2.5em;
+  /* visibility: hidden; */
 }
 
 #prof-pic:hover .hidden-text {
-  visibility: visible;
+  /* visibility: visible; */
   opacity: 1;
   transition: opacity 1s;
 }
